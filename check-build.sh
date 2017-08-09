@@ -16,10 +16,6 @@
 . /etc/profile.d/modules.sh
 module add ci
 cd ${WORKSPACE}/${NAME}-${VERSION}/build-${BUILD_NUMBER}
-make check
-
-echo $?
-
 make install
 mkdir -p ${REPO_DIR}
 mkdir -p modules
