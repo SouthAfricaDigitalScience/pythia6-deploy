@@ -2,6 +2,7 @@
 # this should be run after check-build finishes.
 . /etc/profile.d/modules.sh
 module add deploy
+module add cmake
 cd ${WORKSPACE}/${NAME}-${VERSION}/build-${BUILD_NUMBER}
 echo "All tests have passed, will now build into ${SOFT_DIR}"
 cmake ../ \

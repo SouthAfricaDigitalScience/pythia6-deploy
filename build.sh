@@ -15,7 +15,7 @@
 
 . /etc/profile.d/modules.sh
 module add ci
-
+module add cmake
 # We get the source from the AliSW config repo
 SOURCE_FILE=${VERSION}.tar.gz
 
